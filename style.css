@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --primary-color: #6b826e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+#left-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #a2a48f;
+  border-radius: 10%;
+}
+
+.navbar {
+  align-content: flex-start !important;
+}
+
+.container {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+p {
+  text-align: center;
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  color: #000;
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #dedede;
+  font-size: 16px;
+  background: transparent;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAy0lEQVRIie3TPWoCURSG4QcSELuElLOCWNgGxC3YuYDpXIBFtpAV2MU+nVuIjQtwBRZWYjpBUJw0x4TIhKhzSTUvnGbud17O/RlqalIyRJbAk4XrBzkKLNCqIG+FowjnF3d4j4UPdK+QP2EVjhkeTgMNvEVgi/4F8h420TtB87fgDUYR3GNwhjzHLnpecXvORM84RNNLgtyfk41PJrtmp6WUnW2Vuyqlg3UIp1FFfOtUlR959P2+CyzRTiU/kmEeleKPL+U+qqbmH/kEO341nt7A5z4AAAAASUVORK5CYII=");
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.swap-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rate {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+/* @media (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+  .currency input {
+    width: 200px;
+  }
+} */
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  .currency input {
+    width: 200px;
+  }
+}
